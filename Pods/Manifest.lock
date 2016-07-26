@@ -1,0 +1,10 @@
+PODS:
+  - CircleSlider (0.1.0)
+
+DEPENDENCIES:
+  - CircleSlider
+
+SPEC CHECKSUMS:
+  CircleSlider: d195e672f7b7a644bb07743c90f271d939ef63f0
+
+COCOAPODS: 0.39.0

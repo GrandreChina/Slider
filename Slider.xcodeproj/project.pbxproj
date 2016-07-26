@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7D58BD0C4D26DACD00BF6A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA938E9DE447B7ADDE088830 /* Pods.framework */; };
 		B1DD310F1C4F60490095EE0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD310E1C4F60490095EE0E /* AppDelegate.swift */; };
 		B1DD31111C4F60490095EE0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD31101C4F60490095EE0E /* ViewController.swift */; };
 		B1DD31141C4F60490095EE0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD31121C4F60490095EE0E /* Main.storyboard */; };
 		B1DD31161C4F60490095EE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DD31151C4F60490095EE0E /* Assets.xcassets */; };
 		B1DD31191C4F60490095EE0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD31171C4F60490095EE0E /* LaunchScreen.storyboard */; };
+		B1DD31231C506DCE0095EE0E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B1DD31221C506DCE0095EE0E /* Podfile */; };
+		B1DD31251C5076670095EE0E /* CircleSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD31241C5076670095EE0E /* CircleSlider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43ABBC1741BC4332B63FFDC7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4DD30A1EEA713B2F16967FCD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B1DD310B1C4F60490095EE0E /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DD310E1C4F60490095EE0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1DD31101C4F60490095EE0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		B1DD31151C4F60490095EE0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DD31181C4F60490095EE0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DD311A1C4F60490095EE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DD31221C506DCE0095EE0E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B1DD31241C5076670095EE0E /* CircleSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CircleSlider.framework; path = "Pods/../build/Debug-iphoneos/CircleSlider.framework"; sourceTree = "<group>"; };
+		FA938E9DE447B7ADDE088830 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DD31251C5076670095EE0E /* CircleSlider.framework in Frameworks */,
+				2B7D58BD0C4D26DACD00BF6A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A639CA03F6261786E6401DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD30A1EEA713B2F16967FCD /* Pods.debug.xcconfig */,
+				43ABBC1741BC4332B63FFDC7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1DD31021C4F60480095EE0E = {
 			isa = PBXGroup;
 			children = (
+				B1DD31221C506DCE0095EE0E /* Podfile */,
 				B1DD310D1C4F60490095EE0E /* Slider */,
 				B1DD310C1C4F60490095EE0E /* Products */,
+				0A639CA03F6261786E6401DC /* Pods */,
+				DD48983616BCFD6892CEBA64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +86,15 @@
 			path = Slider;
 			sourceTree = "<group>";
 		};
+		DD48983616BCFD6892CEBA64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1DD31241C5076670095EE0E /* CircleSlider.framework */,
+				FA938E9DE447B7ADDE088830 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1DD311D1C4F60490095EE0E /* Build configuration list for PBXNativeTarget "Slider" */;
 			buildPhases = (
+				5D11365A4AF14211CB48EDC8 /* Check Pods Manifest.lock */,
 				B1DD31071C4F60490095EE0E /* Sources */,
 				B1DD31081C4F60490095EE0E /* Frameworks */,
 				B1DD31091C4F60490095EE0E /* Resources */,
+				A79E5A026BDB04ED0A643929 /* Embed Pods Frameworks */,
+				38C88844BF5AD2910EF45020 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +159,60 @@
 			files = (
 				B1DD31191C4F60490095EE0E /* LaunchScreen.storyboard in Resources */,
 				B1DD31161C4F60490095EE0E /* Assets.xcassets in Resources */,
+				B1DD31231C506DCE0095EE0E /* Podfile in Resources */,
 				B1DD31141C4F60490095EE0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38C88844BF5AD2910EF45020 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D11365A4AF14211CB48EDC8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A79E5A026BDB04ED0A643929 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1DD31071C4F60490095EE0E /* Sources */ = {
@@ -246,8 +329,13 @@
 		};
 		B1DD311E1C4F60490095EE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD30A1EEA713B2F16967FCD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Slider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Grandre.Slider;
@@ -257,8 +345,13 @@
 		};
 		B1DD311F1C4F60490095EE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43ABBC1741BC4332B63FFDC7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Slider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Grandre.Slider;
@@ -285,6 +378,7 @@
 				B1DD311F1C4F60490095EE0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
